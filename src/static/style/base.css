@@ -1,0 +1,28 @@
+* {
+  font-family: "Bitter", serif; }
+
+#header {
+  position: relative;
+  margin: 5em; }
+  #header > h1 {
+    margin: 0;
+    font-size: 2em; }
+    #header > h1 > .title-part-1 {
+      font-weight: 300;
+      color: #006924; }
+    #header > h1 > .title-part-2 {
+      font-weight: 800;
+      color: #4c97b9; }
+  #header > h2 {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    color: gray; }
+  #header > img {
+    position: absolute;
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    height: 3em;
+    width: auto; }
+
+/*# sourceMappingURL=base.css.map */
