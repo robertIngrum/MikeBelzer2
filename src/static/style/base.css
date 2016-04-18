@@ -17,12 +17,34 @@
     margin: 0.5em 0 0;
     font-size: 1.2em;
     color: gray; }
-  #header > img {
+  #header > .resume {
     position: absolute;
-    display: block;
     top: 0.5em;
     right: 0.5em;
-    height: 3em;
-    width: auto; }
+    cursor: pointer; }
+    #header > .resume > .text {
+      position: absolute;
+      top: 0;
+      right: 7em;
+      width: 15em;
+      height: auto; }
+    #header > .resume > .arrow {
+      position: absolute;
+      top: 1.5em;
+      right: 4.5em;
+      width: 15em;
+      height: auto; }
+    #header > .resume > .paper {
+      position: absolute;
+      top: 0.8em;
+      right: 1.4em;
+      height: 3em;
+      width: auto; }
+    #header > .resume > .circle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 5em;
+      width: auto; }
 
 /*# sourceMappingURL=base.css.map */

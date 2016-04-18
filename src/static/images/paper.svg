@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.79 79.67"><defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#8c8e8e;stroke-miterlimit:10;}.cls-2{fill:#fff;}</style></defs><title>paper</title><path class="cls-1" d="M804.21,45.22" transform="translate(-803.71 -44.72)"/><polygon class="cls-2" points="0.5 23.09 23.09 0.5 61.29 0.5 61.29 79.17 0.5 79.17 0.5 23.09"/><polyline class="cls-1" points="23.08 0.55 23.08 23.08 0.57 23.08"/></svg>
+<svg id="paper_drawing" data-name="Paper Drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.79 79.67">
+    <defs>
+        <style>
+            .cls-1{fill:none;}
+            .cls-1,.cls-2{stroke:#8c8e8e;stroke-miterlimit:10;}
+            .cls-2{fill:#fff;}
+        </style>
+    </defs>
+    <title>paper</title>
+    <path class="cls-1" d="M804.21,45.22" transform="translate(-803.71 -44.72)"/>
+    <polygon class="cls-2" points="0.5 23.09 23.09 0.5 61.29 0.5 61.29 79.17 0.5 79.17 0.5 23.09"/>
+    <polyline class="cls-1" points="23.08 0.55 23.08 23.08 0.57 23.08"/>
+</svg>

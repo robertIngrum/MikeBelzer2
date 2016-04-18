@@ -1,0 +1,23 @@
+<svg id="arrow_drawing" data-name="Arrow Drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
+    <defs>
+        <style>
+            .cls-1{
+                fill:none;
+                stroke:#8c8e8e;
+                stroke-miterlimit:10;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash .5s linear forwards;
+                animation-delay: 5.25s;
+            }
+
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+        </style>
+    </defs>
+    <title>Circle</title>
+    <path class="cls-1" d="M 5 5 Q 20 70 485 75 Q 470 62 460 60 Q 474 78 470 94 Q 478 72 486 75" />
+</svg>

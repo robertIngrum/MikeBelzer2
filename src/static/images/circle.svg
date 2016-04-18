@@ -1,0 +1,23 @@
+<svg id="circle_drawing" data-name="Circle Drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .cls-1{
+                fill:none;
+                stroke:#8c8e8e;
+                stroke-miterlimit:10;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash 1s linear forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+        </style>
+    </defs>
+    <title>Circle</title>
+    <path class="cls-1" d="M 5 48 q -1 -47 43 -46 q 50 3 49 50 q -1 48 -45 46 q -50 -2 -50 -55" />
+</svg>
