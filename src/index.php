@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 
+<?php
+    // Building the tagline for the header
+    $taglines = array("This tagline changes every time...", "...but we don't discriminate", "404: Tagline Not Found");
+    $chosen_tagline = $taglines[array_rand($taglines, 1)];
+?>
+
 <html>
     <head>
         <title>For Us, The Living</title>
@@ -13,7 +19,7 @@
     <body>
         <section id="header">
             <h1><span class="title-part-1">For Us,</span> <span class="title-part-2">The Living</span></h1>
-            <h2>This tagline changes every time...</h2>
+            <h2><?php echo $chosen_tagline ?></h2>
 
             <div class="resume">
                 <img class="text" src="static/images/resume_text.svg" alt="Click here to view my resume!" />
