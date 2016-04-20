@@ -1,9 +1,24 @@
 * {
-  font-family: "Bitter", serif; }
+  font-family: "Bitter", serif;
+  color: #706f6e; }
+
+body {
+  margin: 5em 20em;
+  background-color: #fefefc; }
+
+a {
+  color: #4c97b9;
+  text-decoration: none;
+  border-bottom: 1px solid #4c97b9; }
+  a:hover {
+    color: #3883a5;
+    border-color: #3883a5; }
+  a:active {
+    color: #246f91;
+    border-color: #246f91; }
 
 #header {
-  position: relative;
-  margin: 5em; }
+  position: relative; }
   #header > h1 {
     margin: 0;
     font-size: 2em; }
@@ -16,7 +31,7 @@
   #header > h2 {
     margin: 0.5em 0 0;
     font-size: 1.2em;
-    color: gray; }
+    color: #706f6e; }
   #header > .resume {
     position: absolute;
     top: 0.5em;
@@ -46,5 +61,54 @@
       right: 0;
       height: 5em;
       width: auto; }
+
+#about {
+  margin: 1em 0;
+  padding: 1em 0; }
+  #about > p {
+    text-align: justify; }
+
+#projects {
+  margin: 1em 0;
+  padding: 1em 0; }
+  #projects > .project-list {
+    display: flex;
+    margin: 0 -1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    #projects > .project-list > a {
+      display: block;
+      position: relative;
+      flex-shrink: 0;
+      height: 14em;
+      width: 18em;
+      margin: 1em;
+      background-size: cover;
+      background-position: center top;
+      background-color: #706f6e;
+      border: 1px solid #706f6e;
+      overflow: hidden;
+      cursor: pointer; }
+      #projects > .project-list > a > span {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: -4em;
+        padding: 1.25em 0;
+        background-color: rgba(0, 0, 0, 0.65);
+        text-align: center;
+        color: #e9e8e6;
+        transition: all 500ms ease; }
+      #projects > .project-list > a:hover > span {
+        top: 10em;
+        bottom: 0; }
+
+#footer {
+  padding: 0.1em 0;
+  background-color: #e9e8e6;
+  text-align: center; }
 
 /*# sourceMappingURL=base.css.map */

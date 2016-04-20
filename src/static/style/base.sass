@@ -1,13 +1,33 @@
 $blue: #4c97b9
 $green: #006924
 $gray: #706f6e
+$light-gray: #e9e8e6
+$off-white: #fefefc
+$semi-transparent-black: rgba(0, 0, 0, .65)
 
 *
   font-family: 'Bitter', serif
+  color: $gray
+
+body
+  margin: 5em 20em
+  background-color: $off-white
+
+a
+  color: $blue
+  text-decoration: none
+  border-bottom: 1px solid $blue
+
+  &:hover
+    color: $blue - 20
+    border-color: $blue - 20
+
+  &:active
+    color: $blue - 40
+    border-color: $blue - 40
 
 #header
   position: relative
-  margin: 5em
 
   > h1
     margin: 0
@@ -24,7 +44,7 @@ $gray: #706f6e
   > h2
     margin: .5em 0 0
     font-size: 1.2em
-    color: gray
+    color: $gray
 
   > .resume
     position: absolute
@@ -59,3 +79,58 @@ $gray: #706f6e
       right: 0
       height: 5em
       width: auto
+
+#about
+  margin: 1em 0
+  padding: 1em 0
+
+  > p
+    text-align: justify
+
+#projects
+  margin: 1em 0
+  padding: 1em 0
+
+  > .project-list
+    display: flex
+    margin: 0 -1em
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+    > a
+      display: block
+      position: relative
+      flex-shrink: 0
+      height: 14em
+      width: 18em
+      margin: 1em
+      background-size: cover
+      background-position: center top
+      background-color: $gray
+      border: 1px solid $gray
+      overflow: hidden
+      cursor: pointer
+
+      > span
+        display: block
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        bottom: -4em
+        padding: 1.25em 0
+        background-color: $semi-transparent-black
+        text-align: center
+        color: $light-gray
+        transition: all 500ms ease
+
+      &:hover
+        > span
+          top: 10em
+          bottom: 0
+
+#footer
+  padding: .1em 0
+  background-color: $light-gray
+  text-align: center
