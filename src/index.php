@@ -2,13 +2,13 @@
 
 <?php
     // Building the tagline for the header
-    $taglines = array("This tagline changes every time...", "...but we don't discriminate", "404: Tagline Not Found");
+    $taglines = array("A place for things", "By the other Robert", "0 Days Since Last Accident");
     $chosen_tagline = $taglines[array_rand($taglines, 1)];
 ?>
 
 <html>
     <head>
-        <title>For Us, The Living</title>
+        <title>For Us, The Living - <?php echo $chosen_tagline ?></title>
 
         <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
         <link href="static/style/base.css" rel="stylesheet" type="text/css" />
