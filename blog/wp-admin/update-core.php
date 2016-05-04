@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 wp_enqueue_style( 'plugin-install' );
 wp_enqueue_script( 'plugin-install' );
@@ -438,7 +438,7 @@ function list_translation_updates() {
 function do_core_upgrade( $reinstall = false ) {
 	global $wp_filesystem;
 
-	include_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
+	include_once( ABSPATH . 'wp-admin/includes/class-wp-upgrader.php' );
 
 	if ( $reinstall )
 		$url = 'update-core.php?action=do-core-reinstall';

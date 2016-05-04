@@ -8,7 +8,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -32,11 +32,11 @@ if ( isset( $_GET['action'] ) ) {
 				$_POST['allusers'] = array( $id ); // confirm_delete_users() can only handle with arrays
 				$title = __( 'Users' );
 				$parent_file = 'users.php';
-				require_once(ABSPATH . 'wp-admin/admin-header.php');
+				require_once( ABSPATH . 'wp-admin/admin-header.php' );
 				echo '<div class="wrap">';
 				confirm_delete_users( $_POST['allusers'] );
 				echo '</div>';
-				require_once(ABSPATH . 'wp-admin/admin-footer.php');
+				require_once( ABSPATH . 'wp-admin/admin-footer.php' );
 			} else {
 				wp_redirect( network_admin_url( 'users.php' ) );
 			}
@@ -60,11 +60,11 @@ if ( isset( $_GET['action'] ) ) {
 									wp_die( __( 'You do not have permission to access this page.' ), 403 );
 								$title = __( 'Users' );
 								$parent_file = 'users.php';
-								require_once(ABSPATH . 'wp-admin/admin-header.php');
+								require_once( ABSPATH . 'wp-admin/admin-header.php' );
 								echo '<div class="wrap">';
 								confirm_delete_users( $_POST['allusers'] );
 								echo '</div>';
-								require_once(ABSPATH . 'wp-admin/admin-footer.php');
+								require_once( ABSPATH . 'wp-admin/admin-footer.php' );
 								exit();
 
 							case 'spam':
@@ -178,7 +178,7 @@ get_current_screen()->set_screen_reader_content( array(
 	'heading_list'       => __( 'Users list' ),
 ) );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( isset( $_REQUEST['updated'] ) && $_REQUEST['updated'] == 'true' && ! empty( $_REQUEST['action'] ) ) {
 	?>
@@ -230,4 +230,4 @@ if ( isset( $_REQUEST['updated'] ) && $_REQUEST['updated'] == 'true' && ! empty(
 	</form>
 </div>
 
-<?php require_once(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+<?php require_once( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

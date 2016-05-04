@@ -8,7 +8,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -88,7 +88,7 @@ if ( isset($_GET['update']) ) {
 $title = __('Add New User');
 $parent_file = 'users.php';
 
-require(ABSPATH . 'wp-admin/admin-header.php'); ?>
+require( ABSPATH . 'wp-admin/admin-header.php' ); ?>
 
 <div class="wrap">
 <h1 id="add-new-user"><?php _e( 'Add New User' ); ?></h1>
@@ -134,4 +134,4 @@ if ( isset( $add_user_errors ) && is_wp_error( $add_user_errors ) ) { ?>
 	</form>
 </div>
 <?php
-require(ABSPATH . 'wp-admin/admin-footer.php');
+require( ABSPATH . 'wp-admin/admin-footer.php' );

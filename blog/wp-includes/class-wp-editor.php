@@ -208,7 +208,7 @@ final class _WP_Editors {
 				self::$has_medialib = true;
 
 				if ( ! function_exists( 'media_buttons' ) )
-					include(ABSPATH . 'wp-admin/includes/media.php');
+					include( ABSPATH . 'wp-admin/includes/media.php' );
 
 				echo '<div id="wp-' . $editor_id_attr . '-media-buttons" class="wp-media-buttons">';
 

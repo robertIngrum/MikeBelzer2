@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! $taxnow )
 	wp_die( __( 'Invalid taxonomy' ) );
@@ -283,7 +283,7 @@ if ( 'category' == $taxonomy || 'link_category' == $taxonomy || 'post_tag' == $t
 	unset( $help );
 }
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( ! current_user_can( $tax->cap->edit_terms ) ) {
 	wp_die(
@@ -294,7 +294,7 @@ if ( ! current_user_can( $tax->cap->edit_terms ) ) {
 }
 
 /** Also used by the Edit Tag  form */
-require_once(ABSPATH . 'wp-admin/includes/edit-tag-messages.php');
+require_once( ABSPATH . 'wp-admin/includes/edit-tag-messages.php' );
 
 $class = ( isset( $_REQUEST['error'] ) ) ? 'error' : 'updated';
 
@@ -614,4 +614,4 @@ endif;
 
 $wp_list_table->inline_edit();
 
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php' );

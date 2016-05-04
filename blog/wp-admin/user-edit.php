@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 wp_reset_vars( array( 'action', 'user_id', 'wp_http_referer' ) );
 
@@ -653,4 +653,4 @@ break;
 	}
 </script>
 <?php
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php');

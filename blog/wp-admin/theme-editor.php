@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( is_multisite() && ! is_network_admin() ) {
 	wp_redirect( network_admin_url( 'theme-editor.php' ) );
@@ -126,7 +126,7 @@ case 'update':
 
 default:
 
-	require_once(ABSPATH . 'wp-admin/admin-header.php');
+	require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 	update_recently_edited( $file );
 
@@ -295,4 +295,4 @@ jQuery(document).ready(function($){
 break;
 }
 
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include(ABSPATH . 'wp-admin/admin-footer.php' );

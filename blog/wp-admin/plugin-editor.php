@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( is_multisite() && ! is_network_admin() ) {
 	wp_redirect( network_admin_url( 'plugin-editor.php' ) );
@@ -25,14 +25,14 @@ wp_reset_vars( array( 'action', 'error', 'file', 'plugin' ) );
 $plugins = get_plugins();
 
 if ( empty( $plugins ) ) {
-	include(ABSPATH . 'wp-admin/admin-header.php');
+	include( ABSPATH . 'wp-admin/admin-header.php' );
 	?>
 	<div class="wrap">
 		<h1><?php echo esc_html( $title ); ?></h1>
 		<div id="message" class="error"><p><?php _e( 'You do not appear to have any plugins available at this time.' ); ?></p></div>
 	</div>
 	<?php
-	include(ABSPATH . 'wp-admin/admin-footer.php');
+	include( ABSPATH . 'wp-admin/admin-footer.php' );
 	exit;
 }
 

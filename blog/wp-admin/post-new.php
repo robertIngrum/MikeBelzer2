@@ -7,7 +7,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 /**
  * @global string  $post_type
@@ -82,5 +82,5 @@ if ( is_multisite() ) {
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 $post_ID = $post->ID;
-include(ABSPATH . 'wp-admin/edit-form-advanced.php');
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
+include( ABSPATH . 'wp-admin/admin-footer.php' );

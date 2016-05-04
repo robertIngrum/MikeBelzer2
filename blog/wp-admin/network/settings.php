@@ -8,10 +8,10 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 /** WordPress Translation Install API */
-require_once(ABSPATH . 'wp-admin/includes/translation-install.php');
+require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -90,7 +90,7 @@ if ( $_POST ) {
 	exit();
 }
 
-include(ABSPATH . 'wp-admin/admin-header.php');
+include( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( isset( $_GET['updated'] ) ) {
 	?><div id="message" class="updated notice is-dismissible"><p><?php _e( 'Options saved.' ) ?></p></div><?php
@@ -387,4 +387,4 @@ if ( isset( $_GET['updated'] ) ) {
 	</form>
 </div>
 
-<?php include(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+<?php include( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

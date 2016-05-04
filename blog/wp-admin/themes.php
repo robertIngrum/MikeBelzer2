@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! current_user_can( 'switch_themes' ) && ! current_user_can( 'edit_theme_options' ) ) {
 	wp_die(
@@ -147,7 +147,7 @@ add_thickbox();
 wp_enqueue_script( 'theme' );
 wp_enqueue_script( 'customize-loader' );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 
 <div class="wrap">
@@ -461,4 +461,4 @@ $can_install = current_user_can( 'install_themes' );
 	</div>
 </script>
 
-<?php require(ABSPATH . 'wp-admin/admin-footer.php');
+<?php require( ABSPATH . 'wp-admin/admin-footer.php' );

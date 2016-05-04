@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! current_user_can( 'manage_options' ) )
 	wp_die( __( 'You do not have sufficient permissions to manage options for this site.' ) );
@@ -132,7 +132,7 @@ else
 
 flush_rewrite_rules();
 
-require(ABSPATH . 'wp-admin/admin-header.php');
+require( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( ! empty( $_GET['settings-updated'] ) ) : ?>
 <div id="message" class="updated notice is-dismissible"><p><?php
@@ -274,4 +274,4 @@ printf( __( 'If you like, you may enter custom structures for your category and 
 
 </div>
 
-<?php require(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+<?php require( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

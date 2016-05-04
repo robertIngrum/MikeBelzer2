@@ -8,7 +8,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -97,7 +97,7 @@ if ( isset( $_GET['action'] ) ) {
 		$site_details = get_blog_details( $id );
 		$site_address = untrailingslashit( $site_details->domain . $site_details->path );
 
-		require_once(ABSPATH . 'wp-admin/admin-header.php');
+		require_once( ABSPATH . 'wp-admin/admin-header.php' );
 		?>
 			<div class="wrap">
 				<h1><?php _e( 'Confirm your action' ); ?></h1>
@@ -111,7 +111,7 @@ if ( isset( $_GET['action'] ) ) {
 				</form>
 			</div>
 		<?php
-		require_once(ABSPATH . 'wp-admin/admin-footer.php');
+		require_once( ABSPATH . 'wp-admin/admin-footer.php' );
 		exit();
 	} elseif ( array_key_exists( $_GET['action'], $manage_actions ) ) {
 		$action = $_GET['action'];
@@ -278,7 +278,7 @@ if ( isset( $_GET['updated'] ) ) {
 
 $wp_list_table->prepare_items();
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 
 <div class="wrap">
@@ -308,4 +308,4 @@ if ( isset( $_REQUEST['s'] ) && strlen( $_REQUEST['s'] ) ) {
 </div>
 <?php
 
-require_once(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+require_once( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

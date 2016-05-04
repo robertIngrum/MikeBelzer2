@@ -72,7 +72,7 @@ class WP_Plugin_Install_List_Table extends WP_List_Table {
 	 * @global string $wp_version
 	 */
 	public function prepare_items() {
-		include(ABSPATH . 'wp-admin/includes/plugin-install.php');
+		include( ABSPATH . 'wp-admin/includes/plugin-install.php' );
 
 		global $tabs, $tab, $paged, $type, $term;
 

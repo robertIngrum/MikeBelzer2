@@ -515,8 +515,8 @@ function twentysixteen_get_color_scheme_css( $colors ) {
 	.post-navigation a:focus .post-title,
 	.tagcloud a:hover,
 	.tagcloud a:focus,
-	.site-branding .site-title a:hover,
-	.site-branding .site-title a:focus,
+	/*  .site-branding .site-title a:hover, */
+	/*  .site-branding .site-title a:focus, */
 	.entry-title a:hover,
 	.entry-title a:focus,
 	.entry-footer a:hover,
@@ -879,8 +879,8 @@ function twentysixteen_link_color_css() {
 		.post-navigation a:focus .post-title,
 		.tagcloud a:hover,
 		.tagcloud a:focus,
-		.site-branding .site-title a:hover,
-		.site-branding .site-title a:focus,
+		/* .site-branding .site-title a:hover, */
+		/* .site-branding .site-title a:focus, */
 		.entry-title a:hover,
 		.entry-title a:focus,
 		.entry-footer a:hover,
