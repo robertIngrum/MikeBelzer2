@@ -4,6 +4,9 @@
     // Building the tagline for the header
     $taglines = array("A place for things", "By the other Robert", "0 Days Since Last Accident");
     $chosen_tagline = $taglines[array_rand($taglines, 1)];
+
+    // Setting the timezone
+    date_default_timezone_set('UTC');
 ?>
 
 <html>
@@ -41,7 +44,7 @@
                 <a href="#projects">Projects</a>.
             </p>
             <p>
-                I also do freelance and consulting, so if you're looking for an experienced programmer / designer /
+                I also do freelance and consulting, so if you're in the market for an experienced programmer / designer /
                 system administrator, look no further!  Shoot me an email at
                 <a href="mailto:robert@forustheliving.com">robert@forustheliving.com</a>.  You can find my professional
                 resume at the top right of the window if you'd like something a more official background.
