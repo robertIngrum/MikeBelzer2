@@ -7,7 +7,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $parent_file = 'upload.php';
 $submenu_file = 'upload.php';
@@ -84,7 +84,7 @@ case 'edit' :
 	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 	);
 
-	require(ABSPATH . 'wp-admin/admin-header.php');
+	require( ABSPATH . 'wp-admin/admin-header.php' );
 
 	$parent_file = 'upload.php';
 	$message = '';
@@ -135,7 +135,7 @@ if ( current_user_can( 'upload_files' ) ) { ?>
 
 <?php
 
-	require(ABSPATH . 'wp-admin/admin-footer.php');
+	require( ABSPATH . 'wp-admin/admin-footer.php' );
 
 	exit;
 

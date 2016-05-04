@@ -8,7 +8,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( empty( $_REQUEST['tag_ID'] ) ) {
 	$sendback = admin_url( 'edit-tags.php' );
@@ -63,6 +63,6 @@ get_current_screen()->set_screen_reader_content( array(
 	'heading_list'       => $tax->labels->items_list,
 ) );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
-include(ABSPATH . 'wp-admin/edit-tag-form.php');
-include(ABSPATH . 'wp-admin/admin-footer.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
+include( ABSPATH . 'wp-admin/edit-tag-form.php' );
+include( ABSPATH . 'wp-admin/admin-footer.php' );

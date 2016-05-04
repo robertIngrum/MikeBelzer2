@@ -69,7 +69,7 @@ if ( get_option('db_upgraded') ) {
 		 * attempt to do no more than threshold value, with some +/- allowed.
 		 */
 		if ( $c <= 50 || ( $c > 50 && mt_rand( 0, (int)( $c / 50 ) ) == 1 ) ) {
-			require_once(ABSPATH . WPINC . '/http.php');
+			require_once( ABSPATH . WPINC . '/http.php' );
 			$response = wp_remote_get( admin_url( 'upgrade.php?step=1' ), array( 'timeout' => 120, 'httpversion' => '1.1' ) );
 			/** This action is documented in wp-admin/network/upgrade.php */
 			do_action( 'after_mu_upgrade', $response );
@@ -259,9 +259,9 @@ if ( isset($plugin_page) ) {
 			require_once(ABSPATH . 'wp-admin/admin-header.php');
 
 		if ( file_exists(WPMU_PLUGIN_DIR . "/$plugin_page") )
-			include(WPMU_PLUGIN_DIR . "/admin.php");
+			include(WPMU_PLUGIN_DIR . "/$plugin_page");
 		else
-			include(WP_PLUGIN_DIR . "/admin.php");
+			include(WP_PLUGIN_DIR . "/$plugin_page");
 	}
 
 	include(ABSPATH . 'wp-admin/admin-footer.php');

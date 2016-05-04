@@ -8,12 +8,12 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
 
-require_once(ABSPATH . WPINC . '/http.php');
+require_once( ABSPATH . WPINC . '/http.php' );
 
 $title = __( 'Upgrade Network' );
 $parent_file = 'upgrade.php';
@@ -33,7 +33,7 @@ get_current_screen()->set_help_sidebar(
 	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( ! current_user_can( 'manage_network' ) )
 	wp_die( __( 'You do not have permission to access this page.' ), 403 );
@@ -129,4 +129,4 @@ switch ( $action ) {
 ?>
 </div>
 
-<?php include(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+<?php include( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

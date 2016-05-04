@@ -10,7 +10,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if (!current_user_can('upload_files'))
 	wp_die(__('You do not have permission to upload files.'));
@@ -57,7 +57,7 @@ get_current_screen()->set_help_sidebar(
 	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 $form_class = 'media-upload-form type-form validate';
 
@@ -81,4 +81,4 @@ if ( get_user_setting('uploader') || isset( $_GET['browser-uploader'] ) )
 </div>
 
 <?php
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php' );

@@ -7,7 +7,7 @@
  * @since 3.0.0
  */
 
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( !is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -49,7 +49,7 @@ get_current_screen()->set_help_sidebar(
 	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 if ( $updated ) { ?>
 	<div id="message" class="updated notice is-dismissible"><p><strong><?php _e( 'Settings saved.' ); ?></strong></p></div>
@@ -133,4 +133,4 @@ else :
 <?php endif; ?>
 	</div>
 <?php
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php' );

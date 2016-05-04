@@ -8,10 +8,10 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 /** Load WordPress dashboard API */
-require_once(ABSPATH . 'wp-admin/includes/dashboard.php');
+require_once( ABSPATH . 'wp-admin/includes/dashboard.php' );
 
 if ( !is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -60,7 +60,7 @@ wp_enqueue_script( 'dashboard' );
 wp_enqueue_script( 'plugin-install' );
 add_thickbox();
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 ?>
 
@@ -76,4 +76,4 @@ require_once(ABSPATH . 'wp-admin/admin-header.php');
 
 </div><!-- wrap -->
 
-<?php include(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+<?php include( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

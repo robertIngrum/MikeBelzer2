@@ -7,7 +7,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 if ( ! current_user_can( 'edit_posts' ) ) {
 	wp_die(
 		'<h1>' . __( 'Cheatin&#8217; uh?' ) . '</h1>' .
@@ -174,7 +174,7 @@ get_current_screen()->set_screen_reader_content( array(
 	'heading_list'       => __( 'Comments list' ),
 ) );
 
-require_once(ABSPATH . 'wp-admin/admin-header.php');
+require_once( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 
 <div class="wrap">
@@ -307,4 +307,4 @@ if ( isset($_REQUEST['approved']) || isset($_REQUEST['deleted']) || isset($_REQU
 <?php
 wp_comment_reply('-1', true, 'detail');
 wp_comment_trashnotice();
-include(ABSPATH . 'wp-admin/admin-footer.php'); ?>
+include( ABSPATH . 'wp-admin/admin-footer.php' ); ?>

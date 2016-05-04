@@ -16,7 +16,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $title = __('Settings');
 $this_file = 'options.php';
@@ -181,7 +181,7 @@ if ( 'update' == $action ) {
 
 		// Handle translation install.
 		if ( ! empty( $_POST['WPLANG'] ) && ( ! is_multisite() || is_super_admin() ) ) { // @todo: Skip if already installed
-			require_once(ABSPATH . 'wp-admin/includes/translation-install.php');
+			require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 			if ( wp_can_install_language_pack() ) {
 				$language = wp_download_language_pack( $_POST['WPLANG'] );
@@ -240,7 +240,7 @@ if ( 'update' == $action ) {
 	exit;
 }
 
-include(ABSPATH . 'wp-admin/admin-header.php'); ?>
+include( ABSPATH . 'wp-admin/admin-header.php' ); ?>
 
 <div class="wrap">
   <h1><?php esc_html_e( 'All Settings' ); ?></h1>
@@ -296,4 +296,4 @@ foreach ( (array) $options as $option ) :
 </div>
 
 <?php
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php' );

@@ -30,13 +30,13 @@ error_reporting(0);
 
 define( 'ABSPATH', dirname( dirname( __FILE__ ) ) . '/' );
 
-require(ABSPATH . 'wp-settings.php');
+require( ABSPATH . 'wp-settings.php' );
 
 /** Load WordPress Administration Upgrade API */
-require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
 /** Load WordPress Translation Install API */
-require_once(ABSPATH . 'wp-admin/includes/translation-install.php');
+require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 nocache_headers();
 

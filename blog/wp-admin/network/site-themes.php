@@ -8,7 +8,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -144,7 +144,7 @@ $title = sprintf( __( 'Edit Site: %s' ), esc_html( $details->blogname ) );
 $parent_file = 'sites.php';
 $submenu_file = 'sites.php';
 
-require(ABSPATH . 'wp-admin/admin-header.php'); ?>
+require( ABSPATH . 'wp-admin/admin-header.php' ); ?>
 
 <div class="wrap">
 <h1 id="edit-site"><?php echo $title; ?></h1>

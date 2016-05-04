@@ -8,7 +8,7 @@
  */
 
 /** Load WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
 	wp_die( __( 'Multisite support is not enabled.' ) );
@@ -127,7 +127,7 @@ if ( $action ) {
 
 			if ( ! isset( $_REQUEST['verify-delete'] ) ) {
 				wp_enqueue_script( 'jquery' );
-				require_once(ABSPATH . 'wp-admin/admin-header.php');
+				require_once( ABSPATH . 'wp-admin/admin-header.php' );
 				$themes_to_delete = count( $themes );
 				?>
 			<div class="wrap">

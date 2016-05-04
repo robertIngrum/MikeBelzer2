@@ -220,7 +220,7 @@ function wp_ajax_imgedit_preview() {
 
 	check_ajax_referer( "image_editor-$post_id" );
 
-	include_once(ABSPATH . 'wp-admin/includes/image-edit.php');
+	include_once( ABSPATH . 'wp-admin/includes/image-edit.php' );
 	if ( ! stream_preview_image($post_id) )
 		wp_die( -1 );
 
@@ -1046,7 +1046,7 @@ function wp_ajax_replyto_comment( $action ) {
 
 	ob_start();
 	if ( isset( $_REQUEST['mode'] ) && 'dashboard' == $_REQUEST['mode'] ) {
-		require_once(ABSPATH . 'wp-admin/includes/dashboard.php');
+		require_once( ABSPATH . 'wp-admin/includes/dashboard.php' );
 		_wp_dashboard_recent_comments_row( $comment );
 	} else {
 		if ( isset( $_REQUEST['mode'] ) && 'single' == $_REQUEST['mode'] ) {
@@ -2088,7 +2088,7 @@ function wp_ajax_image_editor() {
 		wp_die( -1 );
 
 	check_ajax_referer( "image_editor-$attachment_id" );
-	include_once(ABSPATH . 'wp-admin/includes/image-edit.php');
+	include_once( ABSPATH . 'wp-admin/includes/image-edit.php' );
 
 	$msg = false;
 	switch ( $_POST['do'] ) {
@@ -2602,7 +2602,7 @@ function wp_ajax_send_attachment_to_editor() {
 		$rel = $rel ? ' rel="attachment wp-att-' . $id . '"' : ''; // Hard-coded string, $id is already sanitized
 
 		if ( ! empty( $url ) ) {
-			$html = '<a href="' . esc_url( $url ) . '"' . $rel . '">' . $html . '</a>';
+			$html = '<a href="' . esc_url( $url ) . '"' . $rel . '>' . $html . '</a>';
 		}
 	}
 
@@ -3096,7 +3096,7 @@ function wp_ajax_update_plugin() {
 
 	check_ajax_referer( 'updates' );
 
-	include_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
+	include_once( ABSPATH . 'wp-admin/includes/class-wp-upgrader.php' );
 
 	wp_update_plugins();
 
@@ -3163,7 +3163,7 @@ function wp_ajax_update_plugin() {
  */
 function wp_ajax_press_this_save_post() {
 	if ( empty( $GLOBALS['wp_press_this'] ) ) {
-		include(ABSPATH . 'wp-admin/includes/class-wp-press-this.php');
+		include( ABSPATH . 'wp-admin/includes/class-wp-press-this.php' );
 	}
 
 	$GLOBALS['wp_press_this']->save_post();
@@ -3178,7 +3178,7 @@ function wp_ajax_press_this_save_post() {
  */
 function wp_ajax_press_this_add_category() {
 	if ( empty( $GLOBALS['wp_press_this'] ) ) {
-		include(ABSPATH . 'wp-admin/includes/class-wp-press-this.php');
+		include( ABSPATH . 'wp-admin/includes/class-wp-press-this.php' );
 	}
 
 	$GLOBALS['wp_press_this']->add_category();

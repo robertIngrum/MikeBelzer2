@@ -1,0 +1,123 @@
+$blue: #4c97b9
+$green: #006924
+$gray: #706f6e
+$light-gray: #e9e8e6
+$off-white: #fefefc
+$semi-transparent-black: rgba(0, 0, 0, .65)
+
+*
+  font-family: 'Bitter', serif
+  color: $gray
+
+body
+  margin: 5em 20em
+  background-color: $off-white
+
+a
+  color: $blue
+  text-decoration: none
+  border-bottom: 1px solid $blue
+
+  &:hover
+    color: $blue - 20
+    border-color: $blue - 20
+
+  &:active
+    color: $blue - 40
+    border-color: $blue - 40
+
+#header
+  position: relative
+
+  > h1
+    margin: 0
+    font-size: 2em
+
+    > a
+      border: none
+
+      > .title-part-1
+        font-weight: 300
+        color: $green
+
+      > .title-part-2
+        font-weight: 800
+        color: $blue
+
+#navigation
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-around
+  align-items: center
+  padding: .5em 0
+  border-top: 1px solid $gray
+  border-bottom: 1px solid $gray
+
+  > .page_item
+    display: block
+    list-style: none
+
+    > a
+      border: none
+
+#content
+  margin: 1.5em 0
+
+  > .post
+    padding: .5em 0
+    border-top: 1px solid $light-gray
+    border-bottom: 1px solid $light-gray
+
+    > h2
+      margin: 0
+
+      > a
+        border: none
+
+    > h5
+      font-weight: 300
+      margin: .5em 0
+
+      > a
+        border: none
+
+  > #archives-page
+    h2
+      margin: .1em 0
+      font-size: 1em
+
+    #category-archives,
+    #monthly-archives
+      margin-bottom: 1em
+
+    li
+      list-style: none
+
+    a
+      border: none
+
+#footer
+  padding: .1em 0
+  background-color: $light-gray
+  text-align: center
+
+@media screen and (max-width: 1575px)
+  body
+    margin: 5em 15em
+
+@media screen and (max-width: 1415px)
+  body
+    margin: 5em 10em
+
+@media screen and (max-width: 1255px)
+  body
+    margin: 5em
+
+@media screen and (max-width: 1095px)
+  body
+    margin: 5em
+
+@media screen and (max-width: 935px)
+  body
+    margin: 3em

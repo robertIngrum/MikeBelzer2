@@ -7,7 +7,7 @@
  */
 
 /** Load WordPress Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 /** Load WordPress dashboard API */
 require_once(ABSPATH . 'wp-admin/includes/dashboard.php');
@@ -89,7 +89,7 @@ $screen->set_help_sidebar(
 	'<p>' . __( '<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>' ) . '</p>'
 );
 
-include(ABSPATH . 'wp-admin/admin-header.php');
+include( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 
 <div class="wrap">
@@ -129,4 +129,4 @@ include(ABSPATH . 'wp-admin/admin-header.php');
 </div><!-- wrap -->
 
 <?php
-require(ABSPATH . 'wp-admin/admin-footer.php');
+require( ABSPATH . 'wp-admin/admin-footer.php' );

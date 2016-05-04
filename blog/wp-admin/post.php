@@ -9,7 +9,7 @@
  */
 
 /** WordPress Administration Bootstrap */
-require_once(dirname(__FILE__) . '/admin.php');
+require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $parent_file = 'edit.php';
 $submenu_file = 'edit.php';
@@ -170,7 +170,7 @@ case 'edit':
 		enqueue_comment_hotkeys_js();
 	}
 
-	include(ABSPATH . 'wp-admin/edit-form-advanced.php');
+	include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
 
 	break;
 
@@ -278,4 +278,4 @@ default:
 	wp_redirect( admin_url('edit.php') );
 	exit();
 } // end switch
-include(ABSPATH . 'wp-admin/admin-footer.php');
+include( ABSPATH . 'wp-admin/admin-footer.php' );

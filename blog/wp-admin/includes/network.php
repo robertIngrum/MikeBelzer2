@@ -104,7 +104,7 @@ function network_step1( $errors = false ) {
 	if ( defined('DO_NOT_UPGRADE_GLOBAL_TABLES') ) {
 		echo '<div class="error"><p><strong>' . __('ERROR:') . '</strong> ' . __( 'The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network.' ) . '</p></div>';
 		echo '</div>';
-		include(ABSPATH . 'wp-admin/admin-footer.php');
+		include( ABSPATH . 'wp-admin/admin-footer.php' );
 		die();
 	}
 
@@ -112,7 +112,7 @@ function network_step1( $errors = false ) {
 	if ( ! empty( $active_plugins ) ) {
 		echo '<div class="updated"><p><strong>' . __('Warning:') . '</strong> ' . sprintf( __( 'Please <a href="%s">deactivate your plugins</a> before enabling the Network feature.' ), admin_url( 'plugins.php?plugin_status=active' ) ) . '</p></div><p>' . __( 'Once the network is created, you may reactivate your plugins.' ) . '</p>';
 		echo '</div>';
-		include(ABSPATH . 'wp-admin/admin-footer.php');
+		include( ABSPATH . 'wp-admin/admin-footer.php' );
 		die();
 	}
 
@@ -127,7 +127,7 @@ function network_step1( $errors = false ) {
 		) . '</p>';
 		echo '<a href="' . esc_url( admin_url() ) . '">' . __( 'Return to Dashboard' ) . '</a>';
 		echo '</div>';
-		include(ABSPATH . 'wp-admin/admin-footer.php');
+		include( ABSPATH . 'wp-admin/admin-footer.php' );
 		die();
 	}
 

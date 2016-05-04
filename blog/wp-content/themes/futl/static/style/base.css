@@ -1,0 +1,96 @@
+* {
+  font-family: "Bitter", serif;
+  color: #706f6e; }
+
+body {
+  margin: 5em 20em;
+  background-color: #fefefc; }
+
+a {
+  color: #4c97b9;
+  text-decoration: none;
+  border-bottom: 1px solid #4c97b9; }
+  a:hover {
+    color: #3883a5;
+    border-color: #3883a5; }
+  a:active {
+    color: #246f91;
+    border-color: #246f91; }
+
+#header {
+  position: relative; }
+  #header > h1 {
+    margin: 0;
+    font-size: 2em; }
+    #header > h1 > a {
+      border: none; }
+      #header > h1 > a > .title-part-1 {
+        font-weight: 300;
+        color: #006924; }
+      #header > h1 > a > .title-part-2 {
+        font-weight: 800;
+        color: #4c97b9; }
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em 0;
+  border-top: 1px solid #706f6e;
+  border-bottom: 1px solid #706f6e; }
+  #navigation > .page_item {
+    display: block;
+    list-style: none; }
+    #navigation > .page_item > a {
+      border: none; }
+
+#content {
+  margin: 1.5em 0; }
+  #content > .post {
+    padding: 0.5em 0;
+    border-top: 1px solid #e9e8e6;
+    border-bottom: 1px solid #e9e8e6; }
+    #content > .post > h2 {
+      margin: 0; }
+      #content > .post > h2 > a {
+        border: none; }
+    #content > .post > h5 {
+      font-weight: 300;
+      margin: 0.5em 0; }
+      #content > .post > h5 > a {
+        border: none; }
+  #content > #archives-page h2 {
+    margin: 0.1em 0;
+    font-size: 1em; }
+  #content > #archives-page #category-archives,
+  #content > #archives-page #monthly-archives {
+    margin-bottom: 1em; }
+  #content > #archives-page li {
+    list-style: none; }
+  #content > #archives-page a {
+    border: none; }
+
+#footer {
+  padding: 0.1em 0;
+  background-color: #e9e8e6;
+  text-align: center; }
+
+@media screen and (max-width: 1575px) {
+  body {
+    margin: 5em 15em; } }
+@media screen and (max-width: 1415px) {
+  body {
+    margin: 5em 10em; } }
+@media screen and (max-width: 1255px) {
+  body {
+    margin: 5em; } }
+@media screen and (max-width: 1095px) {
+  body {
+    margin: 5em; } }
+@media screen and (max-width: 935px) {
+  body {
+    margin: 3em; } }
+
+/*# sourceMappingURL=base.css.map */

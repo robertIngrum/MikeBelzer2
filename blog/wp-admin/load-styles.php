@@ -11,7 +11,7 @@ error_reporting(0);
 define( 'ABSPATH', dirname(dirname(__FILE__)) . '/' );
 define( 'WPINC', 'wp-includes' );
 
-require(ABSPATH . 'wp-admin/includes/noop.php');
+require( ABSPATH . 'wp-admin/includes/noop.php' );
 require( ABSPATH . WPINC . '/script-loader.php' );
 require( ABSPATH . WPINC . '/version.php' );
 
