@@ -66,8 +66,12 @@ a
 
   > .post
     padding: .5em 0
-    border-top: 1px solid $light-gray
-    border-bottom: 1px solid $light-gray
+
+    &:not(:first-of-type)
+      border-top: 1px solid $light-gray
+
+    &:not(:last-of-type)
+      border-bottom: 1px solid $light-gray
 
     > h2
       margin: 0
@@ -81,6 +85,9 @@ a
 
       > a
         border: none
+
+    .nocomments
+      display: none
 
   > #archives-page
     h2
@@ -96,6 +103,73 @@ a
 
     a
       border: none
+
+#respond
+  padding: .5em 1.5em
+  font-size: .7em
+  border: 1px solid $light-gray
+  background-color: $light-gray + 17
+
+  > form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    align-content: flex-start
+
+    .comment-notes
+      flex-basis: 100%
+
+    .comment-form-comment
+      flex-basis: 100%
+
+      > label,
+      > textarea
+        vertical-align: top
+        width: 100%
+
+      > textarea
+        width: calc(100% - 6px)
+        border-width: 1px
+        padding: 2px
+
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url
+      flex-basis: 30%
+
+      > label,
+      > input
+        width: 100%  // Fallback in case the browser doesn't support calc.
+        width: calc(100% - 8px)
+        padding: 2px
+        border-width: 2px
+
+.commentlist
+  border: 1px solid $light-gray
+  background: $light-gray + 17
+  list-style: none
+
+  li,
+  ol
+    list-style: none
+
+  .comment
+    margin: 1em 0
+
+    > .comment-body
+      padding-right: 1em
+
+      > .comment-author
+        > img
+          width: 1.5em
+          height: 1.5em
+          vertical-align: middle
+          border-radius: 50%
+
+      > .comment-awaiting-moderation
+        float: right
 
 #footer
   padding: .1em 0

@@ -9,11 +9,11 @@
 <?php get_sidebar(); ?>
 
 <section id="content" role="main">
-    <h2 class="entry-title">Archives</h2>
-
     <?php if (have_posts()) { ?>
 
-        <h4 class="archive_results">Posts for <?php echo get_query_var('monthnum').'/'.get_query_var('year'); ?></h4>
+        <?php if (get_query_var('monthnum') != 0) { ?>
+            <h4 class="archive_results">Posts for <?php echo get_query_var('monthnum').'/'.get_query_var('year'); ?></h4>
+        <?php } ?>
 
         <?php while (have_posts()) {
             the_post(); ?>
@@ -22,8 +22,8 @@
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <h5>
                     <?php the_time('Y F j, g:i a'); ?> |
-                    <?php the_category(', '); ?> |
-                    <?php comments_number('No comments', '1 comment', '% comments'); ?>
+                    <?php comments_number('No comments', '1 comment', '% comments'); ?> |
+                    <?php if (get_the_category() == null) { echo 'No Category'; } else { the_category(', '); } ?>
                 </h5>
 
                 <?php the_content(); ?>

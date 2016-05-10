@@ -11,8 +11,8 @@
                 <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
                 <h5>
                     <?php the_time('Y F j, g:i a'); ?> |
-                    <?php the_category(', '); ?> |
-                    <?php comments_number('No comments', '1 comment', '% comments'); ?>
+                    <?php comments_number('No comments', '1 comment', '% comments'); ?> |
+                    <?php if (get_the_category() == null) { echo 'No Category'; } else { the_category(', '); } ?>
                 </h5>
 
                 <?php the_content(); ?>

@@ -49,9 +49,11 @@ a {
 #content {
   margin: 1.5em 0; }
   #content > .post {
-    padding: 0.5em 0;
-    border-top: 1px solid #e9e8e6;
-    border-bottom: 1px solid #e9e8e6; }
+    padding: 0.5em 0; }
+    #content > .post:not(:first-of-type) {
+      border-top: 1px solid #e9e8e6; }
+    #content > .post:not(:last-of-type) {
+      border-bottom: 1px solid #e9e8e6; }
     #content > .post > h2 {
       margin: 0; }
       #content > .post > h2 > a {
@@ -61,6 +63,8 @@ a {
       margin: 0.5em 0; }
       #content > .post > h5 > a {
         border: none; }
+    #content > .post .nocomments {
+      display: none; }
   #content > #archives-page h2 {
     margin: 0.1em 0;
     font-size: 1em; }
@@ -71,6 +75,64 @@ a {
     list-style: none; }
   #content > #archives-page a {
     border: none; }
+
+#respond {
+  padding: 0.5em 1.5em;
+  font-size: 0.7em;
+  border: 1px solid #e9e8e6;
+  background-color: #faf9f7; }
+  #respond > form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start; }
+    #respond > form .comment-notes {
+      flex-basis: 100%; }
+    #respond > form .comment-form-comment {
+      flex-basis: 100%; }
+      #respond > form .comment-form-comment > label,
+      #respond > form .comment-form-comment > textarea {
+        vertical-align: top;
+        width: 100%; }
+      #respond > form .comment-form-comment > textarea {
+        width: calc(100% - 6px);
+        border-width: 1px;
+        padding: 2px; }
+    #respond > form .comment-form-author,
+    #respond > form .comment-form-email,
+    #respond > form .comment-form-url {
+      flex-basis: 30%; }
+      #respond > form .comment-form-author > label,
+      #respond > form .comment-form-author > input,
+      #respond > form .comment-form-email > label,
+      #respond > form .comment-form-email > input,
+      #respond > form .comment-form-url > label,
+      #respond > form .comment-form-url > input {
+        width: 100%;
+        width: calc(100% - 8px);
+        padding: 2px;
+        border-width: 2px; }
+
+.commentlist {
+  border: 1px solid #e9e8e6;
+  background: #faf9f7;
+  list-style: none; }
+  .commentlist li,
+  .commentlist ol {
+    list-style: none; }
+  .commentlist .comment {
+    margin: 1em 0; }
+    .commentlist .comment > .comment-body {
+      padding-right: 1em; }
+      .commentlist .comment > .comment-body > .comment-author > img {
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        border-radius: 50%; }
+      .commentlist .comment > .comment-body > .comment-awaiting-moderation {
+        float: right; }
 
 #footer {
   padding: 0.1em 0;

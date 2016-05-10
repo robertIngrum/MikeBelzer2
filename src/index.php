@@ -83,7 +83,7 @@
         <section id="footer">
             <p>
                 That's it!  If you'd like more you can check out my
-                <a href="blog.forustheliving.com" target="_blank">blog</a> or send me an email at
+                <a href="http://blog.forustheliving.com" target="_blank">blog</a> or send me an email at
                 <a href="mailto:robert@forustheliving.com">robert@forustheliving.com</a>.
             </p>
         </section>
