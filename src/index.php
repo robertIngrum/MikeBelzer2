@@ -13,6 +13,8 @@
     <head>
         <title>For Us, The Living - <?php echo $chosen_tagline ?></title>
 
+        <link rel="icon" type="img/ico" href="static/images/favicon.ico" />
+
         <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
         <link href="static/style/base.css" rel="stylesheet" type="text/css" />
 

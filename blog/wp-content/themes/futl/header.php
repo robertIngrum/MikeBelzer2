@@ -8,6 +8,8 @@
               content="<?php bloginfo('html_type'); ?>"
               charset="<?php bloginfo('charset') ?>" />
 
+        <link rel="icon" type="img/ico" href="<?php echo get_template_directory_uri(); ?>/static/images/favicon.ico" />
+
         <link href='https://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
 
