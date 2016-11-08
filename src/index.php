@@ -38,10 +38,9 @@
                 Hello!
             </p>
             <p>
-                My name's Robert Ingrum and I'm a
-                <?php echo substr(date('Ymd') - date('Ymd', strtotime('1994-03-12')), 0, -4); ?>
-                year old developer currently living in Seattle, Washington.  This is my personal website and will serve
-                as a hub of sorts for all sorts of fun and interesting content that I'm involved with.  For example,
+                My name's Robert Ingrum and I'm a  developer currently living in beautiful Boulder, Colorado.
+                This is my personal website and will serve as a hub of sorts for all sorts of fun
+                and interesting content that I'm involved with.  For example,
                 you can find a link to the startup I'm currently working with below under
                 <a href="#projects">Projects</a>.
             </p>
@@ -49,12 +48,17 @@
                 I also do freelancing and consulting, so if you're in the market for an experienced programmer / designer /
                 system administrator, look no further!  Shoot me an email at
                 <a href="mailto:robert@forustheliving.com">robert@forustheliving.com</a>.  You can find my professional
-                resume at the top right of the window if you'd like something a more official background.
+                resume at the top right of the window if you'd like a more official background.
             </p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-list">
+                <a href="https://www.bonus.ly"
+                   style="background-image: url('static/images/projects/bonusly.png')"
+                   target="_blank">
+                    <span>Bonusly</span>
+                </a>
                 <a href="https://www.purplewall.com"
                    style="background-image: url('static/images/projects/purplewall.png');"
                    target="_blank">
