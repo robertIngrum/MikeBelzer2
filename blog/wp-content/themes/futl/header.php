@@ -20,13 +20,9 @@
             <?php
                 # Styling the title of the blog
                 $blog_name = get_bloginfo('name');
-                $blog_name_split = explode(',', $blog_name);
+                $blog_name_split = explode('.', $blog_name);
                 $blog_name =
-                    "<span class='title-part-1'>{$blog_name_split[0]},</span><span class='title-part-2'>{$blog_name_split[1]}</span>";
-
-                # Choosing the tagline.  TODO: This really should be done through wp-admin
-                $taglines = array("A place for things", "By the other Robert", "0 Days Since Last Accident");
-                $chosen_tagline = $taglines[array_rand($taglines, 1)];
+                    "<span class='title-part-1'>{$blog_name_split[0]}</span><span class='title-part-2'>.{$blog_name_split[1]}</span>";
             ?>
 
             <h1>
@@ -35,11 +31,9 @@
                 </a>
             </h1>
 
-            <h3><?php echo $chosen_tagline; ?></h3>
-        </section>
-
-        <section id="navigation">
-            <?php wp_list_pages('sort_column=menu_order&title_li='); ?>
+            <section id="navigation">
+                <?php wp_list_pages('sort_column=menu_order&title_li='); ?>
+            </section>
         </section>
     </body>
 </html>
