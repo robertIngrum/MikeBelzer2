@@ -1,6 +1,8 @@
 <?php
     add_filter('stylesheet_uri', 'wpi_stylesheet_uri', 10, 2);
 
+    add_theme_support( 'post-thumbnails' );
+
     /**
      * wpi_stylesheet_uri
      * override default theme stylesheet uri

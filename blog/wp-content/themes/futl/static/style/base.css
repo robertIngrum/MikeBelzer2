@@ -83,6 +83,8 @@ a {
       background: #ccc;
       font-size: 1.25em;
       text-align: center; }
+    #navigation li:hover a {
+      background: #9a9a9a; }
 
 > .page_item {
   display: block;
