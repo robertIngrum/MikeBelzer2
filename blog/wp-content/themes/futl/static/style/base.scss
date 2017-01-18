@@ -3,19 +3,37 @@ $colors: (
         secondary: #555,
         gray: #888,
         light-gray: #ccc,
+        dark-gray: #333,
         text: #dfdddf,
         background: #101511,
-        secondary-background: #909591
+        secondary-background: #909591,
+        black: #000,
+        white: #fff
 );
 
 * {
-  font-family: 'Bitter', serif;
-  color: map-get($colors, text)
+  font-family: 'Arial', serif;
+  color: map-get($colors, text);
+  box-sizing: border-box;
+}
+
+html {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
   margin: 0;
-  background-color: map-get($colors, background);
+  background: map-get($colors, black) url('../images/main_background.png') no-repeat center top;
+  background-size: 100% auto;
 
   > #wpadminbar {
     bottom: 0;
@@ -43,47 +61,63 @@ a {
   }
 }
 
+#header,
+#content,
+#footer,
+#navigation {
+  position: relative;
+  width: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+
+  @media (max-width: 1000px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em 5%;
+  margin-top: 30px;
   background-color: rgba(map-get($colors, secondary-background), .3);
   border-bottom: 1px solid rgba(map-get($colors, secondary-background), .5);
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
 
   > h1 {
     margin: 0;
     font-size: 2em;
 
-    > a {
+    > #site-logo {
+      font-weight: 300;
       border: none;
-
-      > .title-part-1 {
-        font-weight: 100;
-        color: map-get($colors, primary)
-      }
-
-      > .title-part-2 {
-        font-weight: 300;
-        color: map-get($colors, secondary)
-      }
+      color: map-get($colors, white);
     }
   }
 }
 
 #navigation {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
-  padding: .5em 0;
+  background-color: map-get($colors, dark-gray);
+  padding: 0;
+
+  li {
+    display: block;
+    width: 100%;
+    list-style: none;
+
+    a {
+      display: block;
+      padding: .5em 0;
+      background: map-get($colors, light-gray);
+      font-size: 1.25em;
+      text-align: center;
+    }
+  }
 }
 
 > .page_item {
@@ -95,9 +129,9 @@ a {
 
 
 #content {
-  position: fixed;
-  top: 5em;
-  margin: 1.5em 0;
+  background-color: map-get($colors, dark-gray);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
 
   > .post {
     padding: .5em 0;
@@ -210,27 +244,8 @@ a {
 }
 
 #footer {
-  padding: .1em 0;
-  background-color: map-get($colors, light-gray);
   text-align: center;
-}
+  color: map-get($colors, white);
 
-@media screen and (max-width: 1575px) {
-  body { margin: 5em 15em }
-}
-
-@media screen and (max-width: 1415px) {
-  body { margin: 5em 10em }
-}
-
-@media screen and (max-width: 1255px) {
-  body { margin: 5em }
-}
-
-@media screen and (max-width: 1095px) {
-  body { margin: 5em }
-}
-
-@media screen and (max-width: 935px) {
-  body { margin: 3em }
+  a { color: map-get($colors, white); }
 }

@@ -1,10 +1,24 @@
 * {
-  font-family: 'Bitter', serif;
-  color: #dfdddf; }
+  font-family: 'Arial', serif;
+  color: #dfdddf;
+  box-sizing: border-box; }
+
+html {
+  display: block;
+  height: 100%;
+  width: 100%; }
 
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
   margin: 0;
-  background-color: #101511; }
+  background: #000 url("../images/main_background.png") no-repeat center top;
+  background-size: 100% auto; }
   body > #wpadminbar {
     bottom: 0;
     top: auto; }
@@ -20,38 +34,55 @@ a {
     color: #2d2d2d;
     border-color: #2d2d2d; }
 
+#header,
+#content,
+#footer,
+#navigation {
+  position: relative;
+  width: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5em 2em; }
+  @media (max-width: 1000px) {
+    #header,
+    #content,
+    #footer,
+    #navigation {
+      margin-left: 50px;
+      margin-right: 50px; } }
+
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em 5%;
+  margin-top: 30px;
   background-color: rgba(144, 149, 145, 0.3);
-  border-bottom: 1px solid rgba(144, 149, 145, 0.5); }
+  border-bottom: 1px solid rgba(144, 149, 145, 0.5);
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em; }
   #header > h1 {
     margin: 0;
     font-size: 2em; }
-    #header > h1 > a {
-      border: none; }
-      #header > h1 > a > .title-part-1 {
-        font-weight: 100;
-        color: #000; }
-      #header > h1 > a > .title-part-2 {
-        font-weight: 300;
-        color: #555; }
+    #header > h1 > #site-logo {
+      font-weight: 300;
+      border: none;
+      color: #fff; }
 
 #navigation {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
-  padding: .5em 0; }
+  background-color: #333;
+  padding: 0; }
+  #navigation li {
+    display: block;
+    width: 100%;
+    list-style: none; }
+    #navigation li a {
+      display: block;
+      padding: .5em 0;
+      background: #ccc;
+      font-size: 1.25em;
+      text-align: center; }
 
 > .page_item {
   display: block;
@@ -60,9 +91,9 @@ a {
     border: none; }
 
 #content {
-  position: fixed;
-  top: 5em;
-  margin: 1.5em 0; }
+  background-color: #333;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em; }
   #content > .post {
     padding: .5em 0; }
     #content > .post:not(:first-of-type) {
@@ -148,24 +179,9 @@ a {
         float: right; }
 
 #footer {
-  padding: .1em 0;
-  background-color: #ccc;
-  text-align: center; }
-
-@media screen and (max-width: 1575px) {
-  body {
-    margin: 5em 15em; } }
-@media screen and (max-width: 1415px) {
-  body {
-    margin: 5em 10em; } }
-@media screen and (max-width: 1255px) {
-  body {
-    margin: 5em; } }
-@media screen and (max-width: 1095px) {
-  body {
-    margin: 5em; } }
-@media screen and (max-width: 935px) {
-  body {
-    margin: 3em; } }
+  text-align: center;
+  color: #fff; }
+  #footer a {
+    color: #fff; }
 
 /*# sourceMappingURL=base.css.map */
