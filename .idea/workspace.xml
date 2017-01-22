@@ -26,82 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90a4111-d7f1-413e-9885-7091203ae7da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/images/mbbg.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/license.txt" afterPath="$PROJECT_DIR$/blog/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/about.php" afterPath="$PROJECT_DIR$/blog/wp-admin/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus-rtl.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus-rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus-rtl.min.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus-rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus.min.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/customize-nav-menus.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/edit-rtl.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/edit-rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/edit-rtl.min.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/edit-rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/edit.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/edit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/css/edit.min.css" afterPath="$PROJECT_DIR$/blog/wp-admin/css/edit.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/edit-tags.php" afterPath="$PROJECT_DIR$/blog/wp-admin/edit-tags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/includes/class-wp-screen.php" afterPath="$PROJECT_DIR$/blog/wp-admin/includes/class-wp-screen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/includes/image.php" afterPath="$PROJECT_DIR$/blog/wp-admin/includes/image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/includes/post.php" afterPath="$PROJECT_DIR$/blog/wp-admin/includes/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/customize-controls.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/customize-controls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/customize-controls.min.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/customize-controls.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/customize-nav-menus.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/customize-nav-menus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/customize-nav-menus.min.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/customize-nav-menus.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/theme.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/theme.min.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/theme.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/updates.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/updates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/js/updates.min.js" afterPath="$PROJECT_DIR$/blog/wp-admin/js/updates.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/update-core.php" afterPath="$PROJECT_DIR$/blog/wp-admin/update-core.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-admin/widgets.php" afterPath="$PROJECT_DIR$/blog/wp-admin/widgets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/header.php" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/index.php" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.css" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.css.map" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss" afterPath="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-phpmailer.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-phpmailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-smtp.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-smtp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-manager.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-manager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-nav-menus.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-nav-menus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-widgets.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-customize-widgets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-editor.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-image-editor-imagick.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-image-editor-imagick.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/class-wp-theme.php" afterPath="$PROJECT_DIR$/blog/wp-includes/class-wp-theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/comment.php" afterPath="$PROJECT_DIR$/blog/wp-includes/comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview-rtl.css" afterPath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview-rtl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview-rtl.min.css" afterPath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview-rtl.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview.css" afterPath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview.min.css" afterPath="$PROJECT_DIR$/blog/wp-includes/css/customize-preview.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/customize/class-wp-customize-custom-css-setting.php" afterPath="$PROJECT_DIR$/blog/wp-includes/customize/class-wp-customize-custom-css-setting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/customize/class-wp-customize-selective-refresh.php" afterPath="$PROJECT_DIR$/blog/wp-includes/customize/class-wp-customize-selective-refresh.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/default-filters.php" afterPath="$PROJECT_DIR$/blog/wp-includes/default-filters.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/feed-rss2.php" afterPath="$PROJECT_DIR$/blog/wp-includes/feed-rss2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/feed.php" afterPath="$PROJECT_DIR$/blog/wp-includes/feed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/functions.php" afterPath="$PROJECT_DIR$/blog/wp-includes/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview-nav-menus.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview-nav-menus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview-nav-menus.min.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview-nav-menus.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview.min.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-preview.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-selective-refresh.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-selective-refresh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/customize-selective-refresh.min.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/customize-selective-refresh.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/wp-api.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/wp-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/wp-api.min.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/wp-api.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/wplink.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/wplink.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/js/wplink.min.js" afterPath="$PROJECT_DIR$/blog/wp-includes/js/wplink.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/load.php" afterPath="$PROJECT_DIR$/blog/wp-includes/load.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/media.php" afterPath="$PROJECT_DIR$/blog/wp-includes/media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/ms-functions.php" afterPath="$PROJECT_DIR$/blog/wp-includes/ms-functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/post-template.php" afterPath="$PROJECT_DIR$/blog/wp-includes/post-template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/post.php" afterPath="$PROJECT_DIR$/blog/wp-includes/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/class-wp-rest-request.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/class-wp-rest-request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" afterPath="$PROJECT_DIR$/blog/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/script-loader.php" afterPath="$PROJECT_DIR$/blog/wp-includes/script-loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/taxonomy.php" afterPath="$PROJECT_DIR$/blog/wp-includes/taxonomy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/theme.php" afterPath="$PROJECT_DIR$/blog/wp-includes/theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-includes/version.php" afterPath="$PROJECT_DIR$/blog/wp-includes/version.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/wp-mail.php" afterPath="$PROJECT_DIR$/blog/wp-mail.php" />
     </list>
     <ignored path="ForUsTheLiving.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,21 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-3.1.1.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts/jquery-3.1.1.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,8 +67,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -166,20 +87,20 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="160">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
-                <marker date="1484712576000" expanded="true" signature="895:920" ph="..." />
+                <marker date="1485031982000" expanded="true" signature="895:920" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="352">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -203,6 +124,12 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.post</find>
+      <find>map-get</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -229,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/static/style/base.sass" />
         <option value="$PROJECT_DIR$/blog/wp-config-sample.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/index.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/archive.php" />
         <option value="$PROJECT_DIR$/src/index.php" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -237,9 +163,10 @@
         <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/changes.sass" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/changes.scss" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.sass" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/header.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/header.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/index.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss" />
       </list>
     </option>
   </component>
@@ -254,10 +181,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="y" value="-390" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -274,8 +199,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -503,17 +428,18 @@
     <property name="SearchEverywhereHistoryKey" value="footer.php&#9;FILE&#9;file:///Users/robert/Git/MikeBelzer2/blog/wp-content/themes/futl/footer.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/wp-content/themes/futl/static/images" />
+      <recent name="$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts" />
+      <recent name="C:\Users\Robert\Git\ForUsTheLiving\blog\wp-content\themes" />
+      <recent name="C:\Users\Robert\Git\forustheliving_website\src\static\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Robert Ingrum\Git\ForUsTheLiving\blog\wp-content\themes\futl\static\images" />
       <recent name="C:\Users\Robert Ingrum\Git\ForUsTheLiving\blog\wp-content\themes\futl" />
       <recent name="C:\Users\Robert Ingrum\Git\ForUsTheLiving\src\static\images" />
       <recent name="C:\Users\Robert\Git\ForUsTheLiving\blog" />
       <recent name="C:\Users\Robert\Git\forustheliving_website\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts" />
-      <recent name="C:\Users\Robert\Git\ForUsTheLiving\blog\wp-content\themes" />
-      <recent name="C:\Users\Robert\Git\forustheliving_website\src\static\images" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Run Blog">
@@ -1131,7 +1057,11 @@
       <workItem from="1484092883917" duration="228000" />
       <workItem from="1484116408701" duration="40000" />
       <workItem from="1484520877210" duration="283000" />
-      <workItem from="1484702069938" duration="6077000" />
+      <workItem from="1484702069938" duration="6237000" />
+      <workItem from="1484800237501" duration="654000" />
+      <workItem from="1484804614218" duration="27000" />
+      <workItem from="1484842617515" duration="496000" />
+      <workItem from="1485026686988" duration="2812000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the basics.">
       <created>1460760382427</created>
@@ -1207,10 +1137,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73611000" />
+    <option name="totallyTimeSpent" value="77760000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-390" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1221,16 +1151,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15309735" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12481752" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12477876" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06671962" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1245,6 +1174,7 @@
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1561,13 +1491,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/style.css">
@@ -1578,6 +1508,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.sass" />
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts/jquery-3.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="1" column="10136" lean-forward="false" selection-start-line="1" selection-start-column="10136" selection-end-line="1" selection-end-column="10136" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1586,10 +1523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/index.php">
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="352">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1602,36 +1539,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/scripts/jquery-3.1.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="160">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <marker date="1484712576000" expanded="true" signature="895:920" ph="..." />
+            <marker date="1485031982000" expanded="true" signature="895:920" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/functions.php">
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="304">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/futl/static/style/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
       </provider>

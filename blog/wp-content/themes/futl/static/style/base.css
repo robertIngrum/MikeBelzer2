@@ -17,7 +17,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: #000 url("../images/main_background.png") no-repeat center top;
+  background: #000 url("../images/mbbg.png") no-repeat center top;
   background-size: 100% auto; }
   body > #wpadminbar {
     bottom: 0;
@@ -53,8 +53,6 @@ a {
 
 #header {
   margin-top: 30px;
-  background-color: rgba(144, 149, 145, 0.3);
-  border-bottom: 1px solid rgba(144, 149, 145, 0.5);
   border-top-left-radius: .5em;
   border-top-right-radius: .5em; }
   #header > h1 {
@@ -76,15 +74,19 @@ a {
   #navigation li {
     display: block;
     width: 100%;
-    list-style: none; }
+    list-style: none;
+    border: 1px solid #292929; }
     #navigation li a {
       display: block;
       padding: .5em 0;
-      background: #ccc;
+      background: #333;
+      color: #ccc;
       font-size: 1.25em;
       text-align: center; }
+      #navigation li a:hover, #navigation li a:visited {
+        color: #ccc; }
     #navigation li:hover a {
-      background: #9a9a9a; }
+      background: #292929; }
 
 > .page_item {
   display: block;
@@ -104,14 +106,19 @@ a {
       border-bottom: 1px solid #888; }
     #content > .post > h2 {
       margin: 0; }
+      #content > .post > h2,
       #content > .post > h2 > a {
-        border: none; }
+        border: none;
+        color: #ccc; }
     #content > .post > h5 {
       font-weight: 300;
       margin: .5em 0; }
       #content > .post > h5 > a {
         border: none; }
-    #content > .post .nocomments {
+    #content > .post .title {
+      margin-bottom: 1em; }
+    #content > .post .nocomments,
+    #content > .post .details {
       display: none; }
   #content > #archives-page h2 {
     margin: .1em 0;
@@ -185,5 +192,10 @@ a {
   color: #fff; }
   #footer a {
     color: #fff; }
+
+.wpsisac-slick-slider button.slick-arrow {
+  background-color: transparent !important; }
+.wpsisac-slick-slider .slick-image-slide img {
+  width: 100%; }
 
 /*# sourceMappingURL=base.css.map */
