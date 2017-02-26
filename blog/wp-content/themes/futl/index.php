@@ -2,14 +2,6 @@
 
 <?php get_sidebar(); ?>
 
-<section id="contact">
-    <span>Contact</span>
-
-    <a href="mailto:mbelzer@valvesoftware.com" class="email" target="_blank" ></a>
-    <a href="https://www.linkedin.com/in/mikebelzer" class="linkedin" target="_blank" ></a>
-    <a href="https://www.imdb.com/name/nm0069802/" class="imdb" target="_blank" ></a>
-</section>
-
 <section id="content">
     <?php if (have_posts()) {
         while (have_posts()) {

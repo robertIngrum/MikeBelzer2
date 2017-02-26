@@ -1,7 +1,7 @@
 $black: #000;
 $primary: #000;
 $background: #101511;
-$dark-gray: #333;
+$dark-gray: #222;
 $link-gray: #555;
 $gray: #888;
 $secondary-background: #909591;
@@ -92,6 +92,23 @@ a {
   }
 }
 
+#contact {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em 1em;
+  background-color: $dark-gray;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+
+  span { padding-right: .5em; }
+
+  a {
+    padding: 0 .25em;
+    border-bottom: none;
+  }
+}
+
 #navigation {
   $nav-background-color:  $dark-gray;
   $nav-border-color:      $dark-gray - 10;
@@ -104,6 +121,9 @@ a {
   align-items: center;
   background-color: $nav-background-color;
   padding: 0;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  overflow: hidden;
 
   li {
     display: block;
