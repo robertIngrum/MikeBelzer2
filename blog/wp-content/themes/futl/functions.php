@@ -1,5 +1,9 @@
 <?php
     add_filter('stylesheet_uri', 'wpi_stylesheet_uri', 10, 2);
+    add_filter('pre_kses', 'add_scriptfilter');
+
+    remove_filter( 'the_content', 'wpautop' );
+    remove_filter( 'the_excerpt', 'wpautop' );
 
     add_theme_support( 'post-thumbnails' );
 
@@ -20,4 +24,10 @@
             'before_title' => '<h2>',
             'after_title' => '</h2>'
         ));
+    }
+
+    function add_scriptfilter( $string ) {
+        global $allowedtags;
+        $allowedtags['script'] = array( 'src' => array() );
+        return $string;
     }
