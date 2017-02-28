@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Canvas</title>
+        <script src="static/libs/jquery/jquery-2.1.4.min.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <script type="application/javascript">
+            $(document).ready(function() {
+              var points = [
+                {
+                  x: 256,
+                  y: 237,
+                  locations: [
+                    { name: 'Freddyn Beras Santo Dominican Republic',
+                      type: 'Workshop' } ]
+                }, {
+                  x: 325,
+                  y: 365,
+                  locations: [
+                      { name: 'Anima Mundi Riode Janeiro Brazil',
+                        type: 'Lecture, Workshop' }]
+                }, {
+                  x: 320,
+                  y: 365,
+                  locations: [
+                      { name: 'Anima Mundi Sao Paulo Brazil',
+                        type: 'Lecture, Workshop' } ]
+                }, {
+                  x: 472,
+                  y: 125,
+                  locations: [
+                    { name: 'The Animation Workshop  Viborgm Denmark',
+                      type: 'Workshop' },
+                    { name: 'RGB Studio, Copenhagen Denmark',
+                      type: 'Lecture' } ]
+                }, {
+                  x: 138,
+                  y: 187,
+                  locations: [
+                    { name: 'Cal State University of Fullerton Fullerton, California',
+                      type: 'Lecture' },
+                    { name: 'The Art Institute of California, San Francisco, California',
+                      type: 'Lecture'},
+                    { name: 'Cal Poly San Luis Obispo, California',
+                      type: 'Lecture'},
+                    { name: 'Laguna College of Art and Design Laguna Beach, California',
+                      type: 'Lecture'},
+                    { name: 'Californaia Institure of the Arts  Valencia California',
+                      type: 'Lecture' },
+                    { name: 'Promise Keepers  San Diego California',
+                      type: 'Lecture' },
+                    { name: 'Rhythm and Hues Studio  Los Angels, California',
+                      type: 'Lecture' },
+                    { name: 'Disney Studios Burbank California',
+                      type: 'Lecture' },
+                    { name: 'VES Los Angels California',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 444,
+                  y: 131,
+                  locations: [
+                    { name: 'VES Society London England',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 200,
+                  y: 198,
+                  locations: [
+                    { name: 'New Orleans Sdiggraph  New Orleans, Louisiana',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 200,
+                  y: 198,
+                  locations: [
+                    { name: 'Cal Poly San Luis Obispo, California',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 459,
+                  y: 144,
+                  locations: [
+                    { name: 'eDIT Frankfurt, Germany',
+                      type: 'Lecture' },
+                    { name: 'Anomalia  Liomysl Czech Republic',
+                      type: 'Lecture, Workshop' }
+                  ]
+                }, {
+                  x: 245,
+                  y: 161,
+                  locations: [
+                    { name: 'Ottawa International Animation Festival Ottawa Canada',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 284,
+                  y: 153,
+                  locations: [
+                    { name: 'ViewFinders Atlantic Film Festival Halifax Nova Scotia',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 228,
+                  y: 162,
+                  locations: [
+                    { name: 'KAFI Kalamazoo Animation Festival International  Kalamazoo. Michigan',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 218,
+                  y: 158,
+                  locations: [
+                    { name: 'Animation Festival  Madison WI',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 226,
+                  y: 210,
+                  locations: [
+                    { name: 'Disney Studios Orlando Florida',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 165,
+                  y: 231,
+                  locations: [
+                    { name: 'Creanimax Festival Guadalara Mexico',
+                      type: 'Lecture' }
+                  ]
+                }, {
+                  x: 263,
+                  y: 163,
+                  locations: [
+                    { name: 'MASS MOCA  Massachusetts Museum of Contemporary Art  North Adams Massachusetts',
+                      type: 'Lecture, Stop Motion Animation performance' }
+                  ]
+                }
+              ];
+
+              var pin = {
+                offset_x: 14,
+                offset_y: 36,
+                width: 37.5,
+                height: 31
+              };
+
+              var image = new Image();
+              image.src = '/static/images/pin.png';
+
+              var canvas = document.getElementById('map').getContext('2d');
+              var map = $('#map');
+
+              var distance = function(a, b) {
+                return Math.sqrt( Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2) );
+              };
+
+              var handle_click = function(event) {
+                var self = this;
+
+                self.x = event.pageX;
+                self.y = event.pageY;
+
+                $.each(points, function(_i, point) {
+                  var x = point.x - (pin.offset_x / 2);
+                  var y = point.y - (pin.offset_y / 2);
+
+                  if (distance(self, {x: x, y: y}) < 15) { showInfo(point) }
+                });
+              };
+
+              var handle_move = function(event) {
+                var self = this;
+
+                self.x = event.pageX;
+                self.y = event.pageY;
+                self.cursor_style = 'default';
+
+                $.each(points, function(_i, point) {
+                  var x = point.x - (pin.offset_x / 2);
+                  var y = point.y - (pin.offset_y / 2);
+
+                  if (distance(self, {x: x, y: y}) < 15) {
+                    self.cursor_style = 'pointer';
+                    return false;
+                  }
+                });
+
+                $(this).css('cursor', self.cursor_style);
+              };
+
+              var handle_close = function() {
+                $('#info').hide();
+                map.on('click', handle_click)
+              };
+
+              var showInfo = function(point) {
+                var html = '';
+                var info = $('#info');
+                info.show();
+
+                $.each(point.locations, function(_i, location) {
+                  html += "<li>Name: " + location.name + "<br />Event: " + location.type + "</li>";
+                });
+
+                info.find('> ul').html(html);
+
+                map.on('click', handle_close);
+              };
+
+              $('.close').click(handle_close);
+
+              map.mousemove(handle_move);
+
+              map.on('click', handle_click);
+
+              image.onload = function() {
+                $.each(points, function(_i, point) {
+                  var x = point.x - pin.offset_x;
+                  var y = point.y - pin.offset_y;
+                  canvas.drawImage(image, x, y, pin.width, pin.height)
+                });
+              };
+            });
+        </script>
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #222;
+            }
+
+            #map-container {
+                position: relative;
+                height: 600px;
+                width: 950px;
+            }
+
+            #map {
+                background-image: url('/static/images/map.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #info {
+                display: none;
+                position: absolute;
+                top: 100px;
+                bottom: 200px;
+                left: 150px;
+                right: 150px;
+                padding: 10px 75px;
+                overflow: auto;
+                background-color: #eec;
+                border-radius: 10px;
+                box-shadow: 0 0 150px rgba(0, 0, 0, .9);
+            }
+
+            #info > .close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                cursor: pointer;
+                color: #555;
+            }
+
+            #info > ul > li {
+                margin: 5px auto;
+            }
+        </style>
+        <div id="map-container">
+            <canvas id="map" width="950" height="600"></canvas>
+            <div id="info">
+                <h3>Locations:</h3>
+                <span class="close">X</span>
+                <ul id="map-points"></ul>
+            </div>
+        </div>
+    </body>
+</html>
