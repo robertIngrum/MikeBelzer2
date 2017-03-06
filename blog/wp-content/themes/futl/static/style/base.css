@@ -93,6 +93,8 @@ a {
     width: 100%;
     list-style: none;
     border: 1px solid #181818; }
+    #navigation li.current_page_item a {
+      background: #363636; }
     #navigation li a {
       display: block;
       padding: .5em 0;
@@ -214,5 +216,11 @@ a {
   background-color: transparent !important; }
 .wpsisac-slick-slider .slick-image-slide img {
   width: 100%; }
+
+.ngg-album-desc {
+  color: #fff; }
+
+.slideshowlink {
+  display: none; }
 
 /*# sourceMappingURL=base.css.map */

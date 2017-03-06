@@ -8,9 +8,9 @@
             the_post(); ?>
 
             <div class="post">
-                <h2 class="title">
+                <!--h2 class="title">
                     <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                </h2>
+                </h2-->
                 <h5 class="details">
                     <?php the_time('Y F j, g:i a'); ?> |
                     <?php comments_number('No comments', '1 comment', '% comments'); ?> |

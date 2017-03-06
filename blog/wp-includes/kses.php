@@ -1409,6 +1409,8 @@ function wp_kses_normalize_entities($string) {
 function wp_kses_named_entities($matches) {
 	global $allowedentitynames;
 
+	$allowedentitynames = isset($allowedentitynames) ? $allowedentitynames : array();
+
 	if ( empty($matches[1]) )
 		return '';
 

@@ -2,7 +2,7 @@
 
 <html <?php language_attributes() ?>>
     <head>
-        <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+        <title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
 
         <meta http-equiv="content-type"
               content="<?php bloginfo('html_type'); ?>"
@@ -40,6 +40,7 @@
             </h1>
         </section>
         <section id="navigation">
-            <li class="page_item page-item-1"><a href="/">Home</a></li>
+            <?php $home_class = wp_title('', false) == '' ? 'current_page_item' : ''; ?>
+            <li class="page_item page-item-1 <?php echo $home_class; ?>"><a href="/">Home</a></li>
             <?php wp_list_pages('sort_column=menu_order&title_li='); ?>
         </section>
