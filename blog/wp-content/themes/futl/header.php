@@ -23,7 +23,7 @@
             <section id="contact">
                 <span>Contact:</span>
 
-                <a href="mailto:mbelzer@valvesoftware.com" class="email" target="_blank" >
+                <a href="mailto:mbelzer5@gmail.com" class="email" target="_blank" >
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/mikebelzer" class="linkedin" target="_blank" >
