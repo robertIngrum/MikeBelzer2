@@ -293,3 +293,17 @@ a {
 
 .ngg-album-desc { color: $white; }
 .slideshowlink { display: none; }
+
+.email-popup {
+  display: none;
+  position: absolute;
+  top: 2em;
+  padding: .5em;
+  background-color: $dark-gray;
+  border-radius: 3px;
+
+  a {
+    color: $white;
+    border-color: $white;
+  }
+}

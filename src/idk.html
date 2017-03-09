@@ -5,18 +5,14 @@
         x: 256,
         y: 237,
         locations: [
-          { name: 'Freddyn Beras Santo Dominican Republic',
+          { name: 'Freddy Beras Santo Dominican Republic',
             type: 'Workshop' } ]
       }, {
         x: 325,
         y: 365,
         locations: [
           { name: 'Anima Mundi Riode Janeiro Brazil',
-            type: 'Lecture, Workshop' }]
-      }, {
-        x: 320,
-        y: 365,
-        locations: [
+            type: 'Lecture, Workshop' },
           { name: 'Anima Mundi Sao Paulo Brazil',
             type: 'Lecture, Workshop' } ]
       }, {
@@ -62,13 +58,6 @@
         y: 198,
         locations: [
           { name: 'New Orleans Sdiggraph  New Orleans, Louisiana',
-            type: 'Lecture' }
-        ]
-      }, {
-        x: 200,
-        y: 198,
-        locations: [
-          { name: 'Cal Poly San Luis Obispo, California',
             type: 'Lecture' }
         ]
       }, {
@@ -193,7 +182,7 @@
 
     var handle_close = function() {
       $('#info').hide();
-      map.on('click', handle_click)
+      map.unbind('click').click(handle_click)
     };
 
     var showInfo = function(point) {
@@ -202,19 +191,19 @@
       info.show();
 
       $.each(point.locations, function(_i, location) {
-        html += "<li>Name: " + location.name + "<br />Event: " + location.type + "</li>";
+        html += "<li>" + location.name + "<br />" + location.type + "</li>";
       });
 
       info.find('> ul').html(html);
 
-      map.on('click', handle_close);
+      map.unbind('click').click(handle_close);
     };
 
     $('.close').click(handle_close);
 
     map.mousemove(handle_move);
 
-    map.on('click', handle_click);
+    map.click(handle_click);
 
     image.onload = function() {
       $.each(points, function(_i, point) {
@@ -248,6 +237,7 @@
         background-color: #eec;
         border-radius: 10px;
         box-shadow: 0 0 150px rgba(0, 0, 0, .9);
+        opacity: .9;
     }
     #info, #info * {
         color: #333;

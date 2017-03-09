@@ -22,9 +22,29 @@
         <section id="header">
             <section id="contact">
                 <span>Contact:</span>
+                <script type="application/javascript">
+                    $(document).ready(function() {
+                      var hide_email = function(e) {
+                        if ($(e.target).hasClass('fa-envelope')) { return false; }
+                        $('.email-popup').hide();
+                        $('.email').click(show_email);
+                        $('body').unbind('click');
+                      };
 
-                <a href="mailto:mbelzer5@gmail.com" class="email" target="_blank" >
+                      var show_email = function() {
+                        $('.email-popup').show();
+                        $('.email').unbind('click');
+                        $('body').click(hide_email);
+                      };
+
+                      $('.email').click(show_email);
+                    });
+                </script>
+                <a href="#" title='mbelzer5@gmail.com' class="email" >
                     <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="email-popup">
+                        <a href="mailto:mbelzer5@gmail.com" target="_blank">mbelzer5@gmail.com</a>
+                    </div>
                 </a>
                 <a href="https://www.linkedin.com/in/mikebelzer" class="linkedin" target="_blank" >
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
