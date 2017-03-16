@@ -80,15 +80,13 @@ a {
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
 
-  > h1 {
-    margin: 0;
-    font-size: 2em;
+  > #site-logo {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
 
-    > #site-logo {
-      font-weight: 300;
-      border: none;
-      color: $white;
-    }
+    img { width: 100%; }
   }
 }
 
@@ -100,6 +98,7 @@ a {
   background-color: $dark-gray;
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
+  letter-spacing: 1px;
 
   span { padding-right: .5em; }
 
@@ -138,8 +137,10 @@ a {
       padding: .5em 0;
       background: $nav-background-color;
       color: $nav-font-color;
-      font-size: 1.25em;
+      font-size: 1.1em;
       text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
 
       &:hover,
       &:visited { color: $nav-font-color }

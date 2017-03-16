@@ -21,7 +21,7 @@
     <body>
         <section id="header">
             <section id="contact">
-                <span>Contact:</span>
+                <span>CONTACT:</span>
                 <script type="application/javascript">
                     $(document).ready(function() {
                       var hide_email = function(e) {
@@ -53,11 +53,11 @@
                     <i class="fa fa-imdb" aria-hidden="true"></i>
                 </a>
             </section>
-            <h1>
-                <a href="<?php echo get_option('home'); ?>" id="site-logo">
-                    <?php echo get_bloginfo('name'); ?>
-                </a>
-            </h1>
+
+            <a href="<?php echo get_option('home'); ?>" id="site-logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/static/images/logo.png" />
+            </a>
+
         </section>
         <section id="navigation">
             <?php $home_class = wp_title('', false) == '' ? 'current_page_item' : ''; ?>
